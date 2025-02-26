@@ -11,10 +11,10 @@ import java.util.List;
 public interface ParkingSlotRepository extends JpaRepository<ParkingSlot, Long> {
 
     // Find all slots for a specific location
-    List<ParkingSlot> findByLocationId(Long locationId);
-
-    // Find available slots for a location
-    List<ParkingSlot> findByLocationIdAndIsAvailableTrue(Long locationId);
+//    List<ParkingSlot> findByLocationId(Long locationId);
+//
+//    // Find available slots for a location
+//    List<ParkingSlot> findByLocationIdAndIsAvailableTrue(Long locationId);
     
     // Find all available slots
     List<ParkingSlot> findByIsAvailableTrue();
